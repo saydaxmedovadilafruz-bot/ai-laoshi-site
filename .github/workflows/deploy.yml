@@ -23,4 +23,4 @@ jobs:
           rsync -avz --delete \
             -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes" \
             --exclude='.git/' --exclude='.github/' --exclude='.gitignore' \
-            ./ deploy@karvon.io:/var/www/karvon.io/
+            ./ deploy@karvon.io:
